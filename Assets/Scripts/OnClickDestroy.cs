@@ -36,7 +36,7 @@ public class OnClickDestroy : MonoBehaviour
                 coins += 3;
             }
 
-            scoreTotal.text = score.ToString();
+            //scoreTotal.text = score.ToString();
         }
     }
 }

@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    private int score = 0;
-    private int hScore = 0;
+    int score = 10;
     public Text pScore;
-    public Text hText;
 
     // Start is called before the first frame update
     void Start()
@@ -19,17 +17,20 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pScore.text = score.ToString("D4");
-        hText.text = hScore.ToString("D4");
 
-        pScore.text = score.ToString();
+        //pScore.text = score.ToString();
 
-        if (score > hScore)
+        if (Input.GetMouseButtonDown(0))
         {
-            hScore = score;
+            score -= 5;
+            pScore.text = score.ToString();
+            //pScore.text = score.ToString("D4");
         }
+
+        
     }
 
+    /*
     public void setScore(int pScore)
     {
         score = pScore;
@@ -49,5 +50,6 @@ public class Score : MonoBehaviour
     {
         return hScore;
     }
+    */
 
 }
