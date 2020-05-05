@@ -372,7 +372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pScore: {fileID: 1915927844}
-  hText: {fileID: 0}
 --- !u!1 &540769281
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +386,7 @@ GameObject:
   - component: {fileID: 540769283}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

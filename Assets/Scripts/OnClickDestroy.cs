@@ -17,8 +17,8 @@ public class OnClickDestroy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        purseCoins = GameObject.Find("coinsTotal").GetComponent<Text>();
-        healthStat = GameObject.Find("SliderHealth").GetComponent<Slider>();
+        //purseCoins = GameObject.Find("coinsTotal").GetComponent<Text>();
+        //healthStat = GameObject.Find("SliderHealth").GetComponent<Slider>();
     }
 
     // Update is called once per frame

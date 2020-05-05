@@ -33,4 +33,15 @@ public class Enemy : MonoBehaviour
     currentDestination = waypointManager.GetNeWaypoint(currentIndexWaypoint);
     currentIndexWaypoint++;
   }
+
+    private void OnTriggerEnter(Collider trig)
+    {
+        if (trig.gameObject.tag == "Tower")
+        {
+            Destroy(gameObject);
+            Destroy(trig.gameObject);
+            Debug.Log("SMACK!");
+        }
+
+    }
 }
